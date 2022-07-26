@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import sourceData from "app/data.json";
 import AccordianComponent from "src/components/accordianComponent/AccordianComponent.vue";
 import HeaderNavbar from "../headercomponent/HeaderNavbar.vue";
 import HeaderCenter from "../headercomponent/HeaderCenter.vue";
@@ -58,14 +59,7 @@ export default {
   },
   data() {
     return {
-      accordians: [
-        { label: "What is Netflix ?", description: "Hello" },
-        { label: "How much does Netflix cost ?", description: "Asad" },
-        { label: "Where can I watch ?", description: "Anwar" },
-        { label: "How do I cancel ?", description: "Ahmed" },
-        { label: "What can I watch on Netflix ?", description: "Sania" },
-        { label: "Is Netflix good for kids ?", description: "Sania" },
-      ],
+      accordians: sourceData.accordian,
     };
   },
 };
