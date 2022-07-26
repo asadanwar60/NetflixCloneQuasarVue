@@ -1,4 +1,4 @@
-# Quasar App Netflix Clone (first-quasar-app)
+# Quasar App Netflix Clone 
 
 A Quasar Project Netflix Clone
 
