@@ -51,7 +51,7 @@
       "image": "children.png"
     }
   ],
-  "footerLi": [
+  "footerList": [
     { "fTitle": "FAQ", "fLink": "" },
     { "fTitle": "Investor Relations", "fLink": "" },
     { "fTitle": "Privacy", "fLink": "" },

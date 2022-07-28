@@ -1,6 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <!--Header Section-->
+
     <q-img src="src/assets/images/bg.jpg" class="dimmed">
       <HeaderNavbar />
       <HeaderCenter />
@@ -33,18 +34,29 @@
       </div>
     </div>
     <q-separator color="grey" size="6px" />
-    <FooterComponent />
+
+    <!--Footer Section-->
+    <div class="row justify-center">
+      <div class="col-md-8 ftext q-ma-xl">
+        <div class="row">Questions? Call 000-800-040-1843</div>
+        <FooterComponent
+          v-for="(liItem, index) in footerLi"
+          :key="index"
+          v-bind="liItem"
+        />
+      </div>
+    </div>
   </q-layout>
 </template>
 
 <script>
 import sourceData from "app/data.json";
 import AccordianComponent from "src/components/accordianComponent/AccordianComponent.vue";
-import HeaderNavbar from "../headercomponent/HeaderNavbar.vue";
-import HeaderCenter from "../headercomponent/HeaderCenter.vue";
-import GetStartedComponent from "../headercomponent/GetStartedComponent.vue";
-import MidSectionComponent from "../midSection/MidSectionComponent.vue";
-import FooterComponent from "../footercomponent/FooterComponent.vue";
+import HeaderNavbar from "src/components/headercomponent/HeaderNavbar.vue";
+import HeaderCenter from "src/components/headercomponent/HeaderCenter.vue";
+import GetStartedComponent from "src/components/headercomponent/GetStartedComponent.vue";
+import MidSectionComponent from "src/components/midSection/MidSectionComponent.vue";
+import FooterComponent from "src/components/footercomponent/FooterComponent.vue";
 
 export default {
   name: "LandingPage",
@@ -60,6 +72,7 @@ export default {
     return {
       accordians: sourceData.accordian,
       midSection: sourceData.midSection,
+      footerLi: sourceData.footerList,
     };
   },
 };

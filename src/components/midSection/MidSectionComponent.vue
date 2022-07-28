@@ -18,7 +18,7 @@
         <div class="text-h5 text-white text-bold text-center">
           {{ heading }}
         </div>
-        <p class="text-white text-h6 text-center q-pt-md">
+        <p class="text-white text-center q-pt-md">
           {{ subHeading }}
         </p>
       </div>

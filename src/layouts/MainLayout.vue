@@ -4,7 +4,7 @@
 
 
 <script>
-import LandingPage from "src/components/LandingPage/LandingPage.vue";
+import LandingPage from "src/view/LandingPage.vue";
 export default {
   components: {
     LandingPage,

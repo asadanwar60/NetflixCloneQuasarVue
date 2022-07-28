@@ -5,7 +5,6 @@
       :label="label"
       header-class="bg-grey text-white border-white text-h5 q-pt-lg q-pb-lg q-pl-lg q-pr-lg"
     >
-      <div>{{ label }}</div>
       <q-separator />
       <q-card>
         <q-card-section class="bg-grey text-white text-h6">
@@ -20,7 +19,6 @@
       :label="label"
       header-class="bg-grey text-white border-white text-h6 "
     >
-      <div>{{ label }}</div>
       <q-separator />
       <q-card>
         <q-card-section class="bg-grey text-white">

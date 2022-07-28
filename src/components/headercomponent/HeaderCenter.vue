@@ -4,7 +4,7 @@
       <div class="text-center text-h3 gt-sm text-bold q-mb-sm">
         Unlimited movies, TV shows and more.
       </div>
-      <div class="text-center text-bold lt-md q-pa-none q-ma-none">
+      <div class="text-center text-h4 text-bold lt-md q-pa-none q-ma-none">
         Unlimited movies, TV shows and more.
       </div>
       <div class="text-center gt-sm text-h5 q-mb-md">
