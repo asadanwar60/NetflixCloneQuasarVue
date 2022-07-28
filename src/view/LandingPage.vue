@@ -61,7 +61,7 @@
             <FooterComponent
               v-for="(liItem, index) in footerLi"
               :key="index"
-              v-bind="liItem"
+              :fTitle="liItem.fTitle"
             />
           </div>
         </div>
@@ -77,6 +77,7 @@ import HeaderCenter from "src/components/headercomponent/HeaderCenter.vue";
 import MidSectionComponent from "src/components/midSection/MidSectionComponent.vue";
 import AccordianComponent from "src/components/accordianComponent/AccordianComponent.vue";
 import FooterComponent from "src/components/footercomponent/FooterComponent.vue";
+import GetStartedComponent from "src/components/headercomponent/GetStartedComponent.vue";
 export default {
   components: {
     HeaderNavbar,
@@ -84,6 +85,7 @@ export default {
     MidSectionComponent,
     AccordianComponent,
     FooterComponent,
+    GetStartedComponent,
   },
   data() {
     return {
